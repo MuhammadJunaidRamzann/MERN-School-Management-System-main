@@ -67,13 +67,13 @@ const AdminDashboard = () => {
                             <MenuIcon />
                         </IconButton>
                         <Typography
-                            component="h1"
+                            component="h2"
                             variant="h6"
-                            color="inherit"
+                            color="black"
                             noWrap
-                            sx={{ flexGrow: 1 }}
+                            sx={{ flexGrow: 2 }}
                         >
-                            Admin Dashboard
+                            ADMIN DASHBOARD
                         </Typography>
                         <AccountMenu />
                     </Toolbar>
@@ -127,7 +127,7 @@ const AdminDashboard = () => {
                         <Route path="/Admin/students/student/marks/:id" element={<StudentExamMarks situation="Student" />} />
 
                         {/* Teacher */}
-                        <Route path="/Admin/teachers" element={<ShowTeachers />} />
+                        <Route path="/Admin/teachers" element={<ShowTeachers/>} />
                         <Route path="/Admin/teachers/teacher/:id" element={<TeacherDetails />} />
                         <Route path="/Admin/teachers/chooseclass" element={<ChooseClass situation="Teacher" />} />
                         <Route path="/Admin/teachers/choosesubject/:id" element={<ChooseSubject situation="Norm" />} />
@@ -143,12 +143,11 @@ const AdminDashboard = () => {
 }
 
 export default AdminDashboard
-
 const styles = {
     boxStyled: {
         backgroundColor: (theme) =>
             theme.palette.mode === 'light'
-                ? theme.palette.grey[100]
+                ? 'inherint'
                 : theme.palette.grey[900],
         flexGrow: 1,
         height: '100vh',
