@@ -147,7 +147,7 @@ const styles = {
     boxStyled: {
         backgroundColor: (theme) =>
             theme.palette.mode === 'light'
-                ? 'red'
+                ? 'inherit'
                 : theme.palette.grey[900],
         flexGrow: 1,
         height: '100vh',
