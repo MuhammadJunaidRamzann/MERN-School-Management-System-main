@@ -1,8 +1,8 @@
 import { Container, Grid, Paper } from "@mui/material";
 import SeeNotice from "../../components/SeeNotice";
-import Students from "../../assets/school.avif";
+import Students from "../../assets/student.jpg";
 import Classes from "../../assets/img2.png";
-import Teachers from "../../assets/teachers.jpg";
+import Teachers from "../../assets/tec.jpg";
 import Fees from "../../assets/img4.png";
 import styled from "styled-components";
 import CountUp from "react-countup";
@@ -41,7 +41,7 @@ const AdminHomePage = () => {
               <img
                 style={{
                   resizeMode: "cover",
-                  maxWidth: "130px"
+                  maxWidth: "100px"
                 }}
                 src={Students}
                 alt="Students"
@@ -52,7 +52,9 @@ const AdminHomePage = () => {
           </Grid>
           <Grid item xs={12} md={3} lg={3}>
             <StyledPaper>
-              <img src={Classes} alt="Classes" />
+            
+              <img
+               src={Classes} alt="Classes" />
               <Title>Total Classes</Title>
               <Data start={0} end={numberOfClasses} duration={5} />
             </StyledPaper>

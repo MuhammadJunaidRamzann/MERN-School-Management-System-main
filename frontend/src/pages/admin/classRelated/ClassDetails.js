@@ -78,6 +78,7 @@ const ClassDetails = () => {
                 <IconButton onClick={() => deleteHandler(row.id, "Subject")}>
                     <DeleteIcon color="error" />
                 </IconButton>
+
                 <BlueButton
                     variant="contained"
                     onClick={() => {

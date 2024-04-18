@@ -6,7 +6,7 @@ import { addStuff } from '../../../redux/userRelated/userHandle';
 import { underControl } from '../../../redux/userRelated/userSlice';
 import { BlueButton } from "../../../components/buttonStyles";
 import Popup from "../../../components/Popup";
-import Classroom from "../../../assets/classroom.png";
+import Classroom from "../../../assets/class.jpg";
 import styled from "styled-components";
 
 const AddClass = () => {
@@ -58,19 +58,19 @@ const AddClass = () => {
             <StyledContainer>
                 <StyledBox>
                     <Stack sx={{
-                        alignItems: 'center',
+                        alignItems: 'centre',
                         mb: 3
                     }}>
                         <img
                             src={Classroom}
                             alt="classroom"
-                            style={{ width: '80%' }}
+                            style={{ width: '100%' }}
                         />
                     </Stack>
                     <form onSubmit={submitHandler}>
                         <Stack spacing={3}>
                             <TextField
-                                label="Create a class"
+                                label="Create a Class"
                                 variant="outlined"
                                 value={sclassName}
                                 onChange={(event) => {
