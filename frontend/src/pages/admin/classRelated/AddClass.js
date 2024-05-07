@@ -9,6 +9,7 @@ import Popup from "../../../components/Popup";
 import Classroom from "../../../assets/class.jpg";
 import styled from "styled-components";
 
+
 const AddClass = () => {
     const [sclassName, setSclassName] = useState("");
 
@@ -57,6 +58,11 @@ const AddClass = () => {
         <>
             <StyledContainer>
                 <StyledBox>
+                
+    <div style={{ backgroundColor: 'lightblue', padding: '20px' }}>
+      
+    
+  
                     <Stack sx={{
                         alignItems: 'centre',
                         mb: 3
@@ -93,9 +99,12 @@ const AddClass = () => {
                             </Button>
                         </Stack>
                     </form>
+        </div>
                 </StyledBox>
             </StyledContainer>
+        
             <Popup message={message} setShowPopup={setShowPopup} showPopup={showPopup} />
+        
         </>
     )
 }

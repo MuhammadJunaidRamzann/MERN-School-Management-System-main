@@ -61,6 +61,7 @@ const ClassDetails = () => {
 
     const subjectColumns = [
         { id: 'name', label: 'Subject Name', minWidth: 170 },
+
         { id: 'code', label: 'Subject Code', minWidth: 100 },
     ]
 
@@ -76,7 +77,9 @@ const ClassDetails = () => {
         return (
             <>
                 <IconButton onClick={() => deleteHandler(row.id, "Subject")}>
+
                     <DeleteIcon color="error" />
+                    
                 </IconButton>
 
                 <BlueButton
