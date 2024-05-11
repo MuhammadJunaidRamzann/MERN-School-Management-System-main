@@ -59,7 +59,7 @@ const AddClass = () => {
             <StyledContainer>
                 <StyledBox>
                 
-    <div style={{ backgroundColor: 'lightblue', padding: '20px' }}>
+    {/* <div style={{ backgroundColor: 'lightblue', padding: '20px' }}> */}
       
     
   
@@ -99,7 +99,7 @@ const AddClass = () => {
                             </Button>
                         </Stack>
                     </form>
-        </div>
+        {/* </div> */}
                 </StyledBox>
             </StyledContainer>
         
