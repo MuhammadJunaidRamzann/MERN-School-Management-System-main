@@ -75,12 +75,13 @@ const AddClass = () => {
                     </Stack>
                     <form onSubmit={submitHandler}>
                         <Stack spacing={3}>
-                            <TextField
+                            <TextField type="number" inputProps={{min:1,max:10}}
                                 label="Create a Class"
                                 variant="outlined"
                                 value={sclassName}
                                 onChange={(event) => {
                                     setSclassName(event.target.value);
+                                
                                 }}
                                 required
                             />

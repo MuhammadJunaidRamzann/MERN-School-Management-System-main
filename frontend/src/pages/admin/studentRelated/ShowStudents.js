@@ -46,12 +46,12 @@ const ShowStudents = () => {
         console.log(deleteID);
         console.log(address);
         setMessage("Sorry the delete function has been disabled for now.")
-        setShowPopup(true)
+        setShowPopup(false)
 
-        // dispatch(deleteUser(deleteID, address))
-        //     .then(() => {
-        //         dispatch(getAllStudents(currentUser._id));
-        //     })
+         dispatch(deleteUser(deleteID, address))
+             .then(() => {
+                 dispatch(getAllStudents(currentUser._id));
+             })
     }
 
     const studentColumns = [

@@ -116,6 +116,7 @@ const AddStudent = ({ situation }) => {
                     <label>Roll Number</label>
                     <input className="registerInput" type="number" placeholder="Enter student's Roll Number..."
                         value={rollNum}
+                        min="1" max="50"
                         onChange={(event) => setRollNum(event.target.value)}
                         required />
 

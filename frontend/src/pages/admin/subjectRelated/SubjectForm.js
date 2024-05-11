@@ -89,7 +89,7 @@ const SubjectForm = () => {
     return (
         <form onSubmit={submitHandler}>
             <Box mb={2}>
-                <Typography variant="h6" >Add Subjects</Typography>
+                <Typography variant="h6" >ADD SUBJECTS</Typography>
             </Box>
             <Grid container spacing={2}>
                 {subjects.map((subject, index) => (
@@ -122,13 +122,14 @@ const SubjectForm = () => {
                                 label="Sessions"
                                 variant="outlined"
                                 type="number"
-                                inputProps={{ min: 0 }}
+                                inputProps={{ min:0, max:10 }}
                                 value={subject.sessions}
                                 onChange={handleSessionsChange(index)}
                                 sx={styles.inputField}
                                 required
                             />
                         </Grid>
+
                         <Grid item xs={6}>
                             <Box display="flex" alignItems="flex-end">
                                 {index === 0 ? (
@@ -145,7 +146,7 @@ const SubjectForm = () => {
                                         color="error"
                                         onClick={handleRemoveSubject(index)}
                                     >
-                                        Remove
+                                        REMOVE
                                     </Button>
                                 )}
                             </Box>
