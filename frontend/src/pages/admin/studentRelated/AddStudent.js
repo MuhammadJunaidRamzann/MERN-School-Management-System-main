@@ -83,7 +83,6 @@ const AddStudent = ({ situation }) => {
             setLoader(false)
         }
     }, [status, navigate, error, response, dispatch]);
-
     return (
         <>
             <div className="register">
