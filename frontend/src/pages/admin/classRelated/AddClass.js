@@ -73,6 +73,7 @@ const AddClass = () => {
                             style={{ width: '100%' }}
                         />
                     </Stack>
+                    
                     <form onSubmit={submitHandler}>
                         <Stack spacing={3}>
                             <TextField type="number" inputProps={{min:1,max:10}}
